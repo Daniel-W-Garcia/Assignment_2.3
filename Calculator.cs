@@ -30,9 +30,9 @@ public class Calculator
     public void PrintTransaction()
     {
         Console.WriteLine($"""
-                           Your bill is {BillAmount}
-                           Your tip is {TipAmount}
-                           Your total is {TotalAmount}
+                           Your bill is {BillAmount:C}
+                           Your tip is {TipAmount:C}
+                           Your total is {TotalAmount:C}
                            """);
     }
     
