@@ -1,8 +1,15 @@
 ﻿using Assignment_2._3;
 
-Calculator calculator = new()
+/*Calculator calculator = new()
 {
     BillAmount = 100
-};
+};*/
 
-calculator.GetTipPercentageAndTotalBill();
+ReadText readerWriter = new();
+WriteText writer = new();
+
+//calculator.GetTipPercentageAndTotalBill();
+
+readerWriter.ReadTextFile();
+
+//writer.WriteTextFile();
