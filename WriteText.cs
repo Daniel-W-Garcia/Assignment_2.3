@@ -7,8 +7,13 @@ public class WriteText
         try
         {
             StreamWriter sw = new StreamWriter("F:\\Example.txt");
-            sw.WriteLine("Hello World");
-            sw.WriteLine("This is a test");
+            sw.WriteLine("""
+                         Here are some basic details about me:
+                         Name: Louie Lunchmeat
+                         Age: 21
+                         Gender: Male
+                         Address: 123 Main Street, New York, NY 10001
+                         """);
             sw.Close();
         }
         catch (Exception e)
