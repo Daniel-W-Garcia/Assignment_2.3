@@ -6,10 +6,12 @@ public class Calculator
     public float TipAmount { get ; set; }
     public float BillAmount { get; set; }
     public float TotalAmount { get; set; }
+    public float TipPercentage { get; set; }
 
     public float CalculateTipAmount(float billAmount, float tipPercentage)
     {
-        TipAmount = billAmount * tipPercentage / 100;
+        TipPercentage = tipPercentage / 100;
+        TipAmount = billAmount * TipPercentage;
         return TipAmount;
     }
     public float CalculateTotalAmount(float billAmount, float tipAmount)
@@ -31,9 +33,9 @@ public class Calculator
     {
         Console.WriteLine($"""
                            Your bill is {BillAmount:C}
+                           Your tip percentage is {TipPercentage:P}
                            Your tip is {TipAmount:C}
                            Your total is {TotalAmount:C}
                            """);
     }
-    
 }

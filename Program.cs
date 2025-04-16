@@ -5,8 +5,8 @@ Calculator calculator = new()
     BillAmount = 100
 };
 
-ReadText readerWriter = new();
-WriteText writer = new();
+//ReadText readerWriter = new();
+//WriteText writer = new();
 
 calculator.GetTipPercentageAndTotalBill();
 
